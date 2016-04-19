@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Bizu</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="search_hint">Buscar</string>
+    <string name="more_info">SAIBA MAIS</string>
+    <string name="horary">Horário:</string>
+    <string name="description">Descrição</string>
+    <string name="placeName">Nome do Local</string>
+    <string name="placeAddress">Endereço do Local</string>
+    <string name="phone">Fone:</string>
+    <string name="bizu">Bizu</string>
+    <string name="menu">Menu</string>
+    <string name="up">Voltar</string>
+
+    <!-- Strings genericos de registro -->
+    <string name="email">E-MAIL</string>
+    <string name="password">SENHA</string>
+    <string name="rememberLogin">LEMBRAR MEU LOGIN</string>
+    <string name="fogetPassword">ESQUECI MINHA SENHA</string>
+    <string name="registerBizu">CADASTRE-SE NO BIZU</string>
+    <string name="enter">ENTRAR</string>
+    <string name="enterWith">ENTRAR COM</string>
+    <string name="name">NOME</string>
+    <string name="confirmPassword">CONFIRMAR SENHA</string>
+    <string name="date">DIA / MÊS / ANO</string>
+    <string name="confirm">CONFIRMAR</string>
+    <string name="male">MASCULINO</string>
+    <string name="female">FEMININO</string>
+    <string name="acceptTerms">ACEITO OS TERMOS DO BIZU</string>
+
+    <!-- Strings do Drawer Layout -->
+    <string name="profile">PERFIL</string>
+    <string name="tellFriend">CONTAR A UM AMIGO</string>
+    <string name="reportProblem">RELATAR UM PROBLEMA</string>
+    <string name="about">SOBRE</string>
+    <string name="terms">TERMOS</string>
+    <string name="tutorial">TUTORIAL</string>
+</resources>

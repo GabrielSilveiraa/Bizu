@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/app_background"
+    android:focusableInTouchMode="true"
+    android:id="@+id/loginParentLayount"
+    tools:context="com.example.gabrielsilveira.bizu.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/bizu"
+        android:id="@+id/imageView"
+        android:src="@drawable/logo_login"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/emailLogin"
+        android:drawableStart="@drawable/email"
+        android:drawableLeft="@drawable/email"
+        android:paddingLeft="15dp"
+        android:paddingStart="15dp"
+        android:drawablePadding="15dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textStyle="bold"
+        android:background="@drawable/edit_text"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/passwordLogin"
+        android:drawableLeft="@drawable/senha"
+        android:drawableStart="@drawable/senha"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+        android:drawablePadding="20dp"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textStyle="bold"
+        android:background="@drawable/edit_text"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/btLogin"
+        android:background="@drawable/button_transparent"
+        android:text="@string/enter"
+        android:textColor="@android:color/white"
+        android:textSize="10pt"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp">
+
+        <com.example.gabrielsilveira.bizu.ToggleableRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_centerVertical="true"
+            android:id="@+id/rdBtRememberMe"
+            android:text="@string/rememberLogin"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:checked="true"
+            android:button="@drawable/radio_button_white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_centerVertical="true"
+            android:id="@+id/forgetPassword"
+            android:text="@string/fogetPassword"
+            android:textAlignment="viewEnd"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_alignTop="@+id/foreground"
+            android:layout_alignBottom="@id/foreground"
+            android:id="@+id/btFacebook"
+            android:background="@drawable/button_facebook"/>
+
+        <RelativeLayout
+            android:id="@+id/foreground"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/btFacebookText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/enterWith"
+                android:textColor="@android:color/white"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/btFacebookText"
+                android:layout_toEndOf="@id/btFacebookText"
+                android:paddingTop="10dip"
+                android:paddingBottom="10dip"
+                android:src="@drawable/name_facebook" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:id="@+id/goToRegister"
+        android:text="@string/registerBizu"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
+
+</LinearLayout>

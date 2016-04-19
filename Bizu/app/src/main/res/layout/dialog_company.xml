@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@color/transparent"
+    android:id="@+id/dialogParentLayout">
+
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:animateLayoutChanges="true"
+    android:layout_height="wrap_content"
+    android:id="@+id/dialogCompanyLayout"
+    android:layout_alignParentTop="true"
+    android:paddingBottom="10dp"
+    android:background="@android:color/white"
+    android:layout_centerHorizontal="true">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:id="@+id/companyName"
+        android:text="@string/placeName"
+        android:textAlignment="center"
+        android:textSize="18pt"
+        android:textStyle="bold"
+        android:textColor="@color/actionBarEndColor"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:id="@+id/companyAddress"
+        android:text="@string/placeAddress"
+        android:textAlignment="center"
+        android:textSize="12pt"
+        android:textStyle="bold"
+        android:textColor="@color/actionBarEndColor"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:id="@+id/companyDescription"
+        android:text="@string/description"
+        android:textAlignment="center"
+        android:textSize="11pt"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/horary"
+            android:textAlignment="center"
+            android:textSize="11pt"
+            android:textStyle="bold"
+            android:textColor="@color/actionBarEndColor"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:id="@+id/companyHorary"
+            android:textAlignment="center"
+            android:textSize="11pt"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/phone"
+            android:textAlignment="center"
+            android:textSize="11pt"
+            android:textStyle="bold"
+            android:textColor="@color/actionBarEndColor"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:id="@+id/companyPhone"
+            android:textAlignment="center"
+            android:textSize="11pt"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="@string/more_info"
+        android:textStyle="bold"
+        android:textColor="@color/AppBackgroundEndColor"
+        android:id="@+id/btMoreInfo"
+        android:layout_gravity="center"
+        android:background="@drawable/button_yellow_border"/>
+
+</LinearLayout>
+
+</RelativeLayout>
